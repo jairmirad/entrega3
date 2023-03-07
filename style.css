@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    position: relative;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-item {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    color: #fff;
+}
+
+.navbar-toggle span {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-menu li {
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+.ver-carrito {
+    font-size: 4.5rem;
+    margin: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.titulo-container {
+    text-align: center;
+    padding: 20% 0;
+}
+
+.titulo {
+    color: #020202;
+    font-size: 1.5rem;
+}
+
+.ice-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #020202;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card>img {
+    width: 100%;
+    height: 300px;
+}
+
+.precio {
+    color: black;
+    font-size: 30px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(206, 37, 37);
+    background-color: #020202;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.modal-content {
+    width: 100%;
+    margin: 0.5%;
+    max-height: 88vh;
+    color: rgb(206, 37, 37);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    color: rgb(206, 37, 37);
+    width: 100%;
+    font-size: 20px;
+}
+
+.modal-header-title {
+    justify-self: start;
+    font-size: 2rem;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-content>.modal-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    border: 2px solid rgb(206, 37, 37);
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.modal-content>div>img {
+    height: 100px;
+    width: 100px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #141414;
+}
+
+.eliminar-producto {
+    cursor: pointer;
+}
+
+.sumar {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.restar {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.enlaces a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.enlaces a:hover {
+    color: #666;
+}
+
+.derechos p {
+    color: #666;
+    font-size: 12px;
+    margin-top: 10px;
+}
